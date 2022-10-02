@@ -1,0 +1,36 @@
+.switch-multibutton {
+  display: flex;
+  background-color: #f0f0f0;
+  width: 200px;
+  align-items: center;
+  border-radius: 47.0588px;
+}
+.switch-multibutton div {
+  display: flex;
+  justify-content: center;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 47.0588px;
+  cursor: pointer;
+}
+
+.switch-multibutton .active-div {
+  background-color: var(--primary-color);
+  color: white;
+}
+.date-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+input {
+  padding: 10px;
+  border: 1.5px solid #d4d0d0;
+  border-radius: 10px;
+  outline: none;
+}
+.range-values {
+  margin-top: -15px;
+  color: #606060;
+  font-size: 12px;
+}

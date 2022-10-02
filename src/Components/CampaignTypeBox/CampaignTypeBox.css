@@ -1,0 +1,37 @@
+.box {
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 8px 10px;
+  padding: 0 15px;
+  position: relative;
+  width: 370px;
+}
+
+.selectedBox {
+  background: rgba(231, 240, 255, 0.3);
+  border: 1.5px solid var(--primary-color);
+}
+
+.unselectedBox {
+  border: 1.5px solid #dfdddd;
+}
+
+.check-icon {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  font-size: 18px;
+}
+
+.campaign-name {
+  font-weight: 520;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.campaign-desc {
+  font-weight: 400;
+  font-size: 11px;
+  margin-top: -10px;
+  color: rgba(11, 26, 51, 0.5);
+}

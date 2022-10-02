@@ -1,0 +1,24 @@
+.product-wrapper {
+  width: 275px;
+  border: 1.5px solid #e6dddd;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+.selected {
+  border: 1.5px solid #0f6eff;
+}
+
+.product-img {
+  height: 180px;
+  width: 100%;
+}
+.product-description {
+  font-size: 12px;
+}
+
+button {
+  padding: 0 4px;
+  background: rgb(251, 252, 255);
+  border: 1px solid #ced0d4;
+}
