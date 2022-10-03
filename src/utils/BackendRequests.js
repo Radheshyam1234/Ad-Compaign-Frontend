@@ -9,7 +9,7 @@ export const getCampaignList = async (campaignListDispatch) => {
       method: "GET",
       url: `${API_URL}/campaign`,
     });
-    console.log(response);
+
     campaignListDispatch({ type: "SET_CAMPAIGN_LIST", payload: response });
   } catch (error) {
     console.log(error);
@@ -25,7 +25,7 @@ export const addNewCampaign = async (data, campaignListDispatch) => {
       url: `${API_URL}/campaign`,
       data: data,
     });
-    console.log(response);
+
     campaignListDispatch({ type: "ADD_NEW_CAMPAIGN", payload: response });
   } catch (error) {
     console.log(error);

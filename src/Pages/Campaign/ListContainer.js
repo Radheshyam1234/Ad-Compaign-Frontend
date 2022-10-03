@@ -18,6 +18,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { deleteCampaign, getCampaignList } from "../../utils/BackendRequests";
 import { useCampaignListProvider } from "../../Context/CampaignListContext/CampaignListProvider";
 import { DateConverter } from "../../utils/DateConverter";
+import { getTime } from "../../utils/getTime";
 import { CheckActiveStatus } from "../../utils/CheckActiveStatus";
 import { FilteredList } from "./utils/FilteredList";
 
@@ -25,7 +26,6 @@ export const ListContainer = () => {
   const { campaignListState, campaignListDispatch } = useCampaignListProvider();
   useEffect(() => {
     getCampaignList(campaignListDispatch);
-    console.log(campaignListState);
   }, []);
 
   return (
@@ -72,7 +72,9 @@ export const ListContainer = () => {
                       />
                       <div className="flex flex-column ml-10">
                         <div className="font-bold">{campaign.name}</div>
-                        <div className="mt-5">Created On {}</div>
+                        <div className="mt-5">
+                          Created On {getTime(campaign.updatedAt)}
+                        </div>
                       </div>
                     </div>
                   </TableCell>
